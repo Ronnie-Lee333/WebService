@@ -48,7 +48,7 @@ Web Service Server Sample Code For Go
      `Invoke-WebRequest -Method DELETE http://127.0.0.1:8080/post/1`  
  
  2)並行処理でJSON文字を結合するWebAPIについてのリクエストは、以下はサンプル  
-   Invoke-WebRequest -Method GET http://127.0.0.1:8080/japi/1  
+   `Invoke-WebRequest -Method GET http://127.0.0.1:8080/japi/1`  
 ***
 ◆その他  
 postgreSQLのDB作成、テーブル生成の資源は、以下  
