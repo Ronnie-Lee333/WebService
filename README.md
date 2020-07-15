@@ -41,11 +41,11 @@ Web Service Server Sample Code For Go
    ・登録  
      `Invoke-WebRequest -Method POST -Body '{"content":"Hello","author":"system"}' http://127.0.0.1:8080/post/`      
    ・検索   ※最後の1は、「テーブルposts」のID  
-     Invoke-WebRequest -Method GET http://127.0.0.1:8080/post/1  
+     `Invoke-WebRequest -Method GET http://127.0.0.1:8080/post/1`  
    ・更新   ※最後の1は、「テーブルposts」のID  
-     Invoke-WebRequest -Method PUT -Body '{"content":"Post","author":"s.lee"}' http://127.0.0.1:8080/post/1  
+     `Invoke-WebRequest -Method PUT -Body '{"content":"Post","author":"s.lee"}' http://127.0.0.1:8080/post/1`  
    ・削除   ※最後の1は、「テーブルposts」のID  
-     Invoke-WebRequest -Method DELETE http://127.0.0.1:8080/post/1  
+     `Invoke-WebRequest -Method DELETE http://127.0.0.1:8080/post/1`  
  
  2)並行処理でJSON文字を結合するWebAPIについてのリクエストは、以下はサンプル  
    Invoke-WebRequest -Method GET http://127.0.0.1:8080/japi/1  
