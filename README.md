@@ -39,11 +39,11 @@ Web Service Server Sample Code For Go
 **クライアント側** ※windows terminalで実行  
 1)「テーブルposts」に登録、更新、照会及び削除を行うWebAPIについてのリクエストは、以下はサンプル  
    ・登録  
-     Invoke-WebRequest -Method POST -Body '{"content":"Heal the World","author":"michael jackson"}' http://127.0.0.1:8080/post/  
+     `Invoke-WebRequest -Method POST -Body '{"content":"Hello","author":"system"}' http://127.0.0.1:8080/post/`      
    ・検索   ※最後の1は、「テーブルposts」のID  
      Invoke-WebRequest -Method GET http://127.0.0.1:8080/post/1  
    ・更新   ※最後の1は、「テーブルposts」のID  
-     Invoke-WebRequest -Method PUT -Body '{"content":"Post Last","author":"s.lee"}' http://127.0.0.1:8080/post/1  
+     Invoke-WebRequest -Method PUT -Body '{"content":"Post","author":"s.lee"}' http://127.0.0.1:8080/post/1  
    ・削除   ※最後の1は、「テーブルposts」のID  
      Invoke-WebRequest -Method DELETE http://127.0.0.1:8080/post/1  
  
