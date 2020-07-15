@@ -29,14 +29,14 @@ Web Service Server Sample Code For Go
   5)func delete                 =>DBの「テーブルposts」のレコード削除  
 ***
 ◆実行方法  
-サーバ側  
+**サーバ側**  
 1)ビルドは、以下実行  
   go build  
   成功したら、web_service.exeが生成される  
 2)サーバ起動は、以下実行  
   ./web_service  
 
-クライアント側 ※windows terminalで実行  
+**クライアント側** ※windows terminalで実行  
 1)「テーブルposts」に登録、更新、照会及び削除を行うWebAPIについてのリクエストは、以下はサンプル  
    ・登録  
      Invoke-WebRequest -Method POST -Body '{"content":"Heal the World","author":"michael jackson"}' http://127.0.0.1:8080/post/  
